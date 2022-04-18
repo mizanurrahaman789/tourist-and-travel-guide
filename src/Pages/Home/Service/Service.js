@@ -13,7 +13,7 @@ const Service = ({ service }) => {
       }
       return (
 
-            <div className="card service-container">
+            <div className="card service-container ">
                   <img className="card-img-top w-100" src={img} alt="..." />
                   <div class="card-body">
                         <h5 className="card-title">{name}</h5>
