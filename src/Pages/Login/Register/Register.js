@@ -1,35 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Register.css'
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { async } from '@firebase/util';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
+      const [agree, setAgree] = useState(false);
       const [
             createUserWithEmailAndPassword,
             user,
             loading,
             error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+      const [updateProfile, updating, updateerror] = useUpdateProfile(auth);
       const navigate = useNavigate();
 
       const navigateLogin = () => {
             navigate('/login')
       }
-
-      if (user) {
-            navigate('/home');
+      if (loading || updating) {
+            return <Loading></Loading>
       }
-      const handleRegister = event => {
+      if (user) {
+            console.log('user', user)
+      }
+      const handleRegister = async (event) => {
             event.preventDefault();
             const name = event.target.name.value;
             const email = event.target.email.value;
             const password = event.target.password.value;
+            // const agree = event.target.terms.value;
 
-            createUserWithEmailAndPassword(email, password);
-            console.log(event.target.name.value)
+            await createUserWithEmailAndPassword(email, password);
+            await updateProfile({ displayName: name });
+            console.log('Updated profile');
+            navigate('/home');
+
+
+            // console.log(event.target.name.value)
       }
       return (
             <div className='register-form'>
@@ -41,9 +53,9 @@ const Register = () => {
                         <input type="email" name='email' id='' placeholder='Email Address' required></input>
 
                         <input type="password" name='password' id='' placeholder='Password' required></input>
-                        <input type="checkbox" name='terms' id="terms"></input>
-                        <label htmlFor='terms'>Accept Terms And Condition</label>
-                        <input className='w-50 mx-auto btn btn-primary mt-2' type='submit' value='Register'></input>
+                        <input onClick={() => setAgree(!agree)} type="checkbox" name='terms' id="terms"></input>
+                        <label className={agree ? 'ps-2 text-primary' : 'ps-2 text-danger'} htmlFor='terms'>Accept Terms And Condition</label>
+                        <input disabled={!agree} className='w-50 mx-auto btn btn-primary mt-2' type='submit' value='Register'></input>
                   </Form>
                   <p className='text-center'>Alredy have an account? <Link to='/login' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Pleasse Login</Link></p>
                   <SocialLogin></SocialLogin>
