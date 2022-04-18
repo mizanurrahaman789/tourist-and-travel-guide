@@ -21,7 +21,7 @@ const Banner = () => {
                         />
                         <Carousel.Caption>
                               <h3 >Traveling Very Intersting</h3>
-                              <p>Our travel guides aim to give you the best and most up-to-date information on the major travel destinations around the world.</p>
+                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
