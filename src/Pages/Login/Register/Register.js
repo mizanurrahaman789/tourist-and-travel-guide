@@ -41,9 +41,11 @@ const Register = () => {
                         <input type="email" name='email' id='' placeholder='Email Address' required></input>
 
                         <input type="password" name='password' id='' placeholder='Password' required></input>
-                        <input type='submit' value='Register'></input>
+                        <input type="checkbox" name='terms' id="terms"></input>
+                        <label htmlFor='terms'>Accept Terms And Condition</label>
+                        <input className='w-50 mx-auto btn btn-primary mt-2' type='submit' value='Register'></input>
                   </Form>
-                  <p>Alredy have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Pleasse Login</Link></p>
+                  <p className='text-center'>Alredy have an account? <Link to='/login' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Pleasse Login</Link></p>
                   <SocialLogin></SocialLogin>
             </div >
       );
