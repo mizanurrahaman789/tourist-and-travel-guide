@@ -1,0 +1,11 @@
+.expert-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px
+}
+
+.expert-section img {
+
+      height: 300px;
+
+}

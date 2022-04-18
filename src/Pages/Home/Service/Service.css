@@ -20,14 +20,14 @@
       justify-content: center;
 }
 
-.cocation-icon img {
+.location-icon img {
       width: 30px;
       height: 30px;
 }
 
-.location-price h5 {
+/* .location-price p {
       margin-left: 20px;
-}
+} */
 
 .booking-button {
       width: 100%;
