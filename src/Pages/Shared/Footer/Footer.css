@@ -2,13 +2,13 @@
       width: 100%;
       height: 100px;
       background-color: black;
+      margin-top: 100px;
+
 }
 
 .footer-containar p {
-      text-align: center;
       justify-content: center;
+      text-align: center;
       align-items: center;
-      font-size: 30px;
-      margin-top: 50px;
-      color: white
+      color: white;
 }
