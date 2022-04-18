@@ -1,0 +1,35 @@
+.service-container {
+      border: 1px solid gray;
+      text-align: center;
+      border-radius: 10px;
+}
+
+.service-container img {
+      width: 400px;
+      height: 300px;
+      margin-top: 15px;
+      border-radius: 8px;
+}
+
+.service-container h2 {
+      font-size: 22px;
+}
+
+.location-price {
+      display: flex;
+      justify-content: center;
+}
+
+.cocation-icon img {
+      width: 30px;
+      height: 30px;
+}
+
+.location-price h5 {
+      margin-left: 20px;
+}
+
+.booking-button {
+      width: 100%;
+      height: 50px;
+}

@@ -1,0 +1,56 @@
+[
+      {
+            "postId": 1,
+            "id": 1,
+            "name": "Lavender Fields",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWlgcEOd4MokcHyCTCrK19FsfijffVF6Z0gA&usqp=CAU",
+            "text": "Beautiful lavensders wide spread here, suitable for relaxing",
+            "location": "Drome, France",
+            "price": "$ 150"
+      },
+      {
+            "postId": 1,
+            "id": 2,
+            "name": "Snow Hill",
+            "text": "Cold weather here, it is prefect cooling the hot head",
+            "img": "https://www.lapland.fi/uploads/2021/09/bf8bc7c1-lapland-winter-river-inari-lemmenjoki-national-park-inari-saariselka-tourism-1440x960.jpg",
+            "location": "Inari Finland",
+            "price": "$ 230"
+      },
+      {
+            "postId": 1,
+            "id": 3,
+            "name": "One WTC",
+            "img": "https://www.wtc.com/upload/about/officebuildings/fullbuilding_1.jpg",
+            "text": "Traveling near tall building, it is perfect for photo spots",
+            "location": "New York City",
+            "price": "$ 190"
+      },
+      {
+            "postId": 1,
+            "id": 4,
+            "name": "Manhattan Bridge",
+            "img": "https://group.skanska.com/globalassets/externalcontent2/project/manhattan-bridge-rehabilitation-of-suspender-and-main-cables---contract-14/dca16fdb-c22e-4dc3-b3a4-101f858426ee.1.jpg?w=1200&h=600&mode=crop",
+            "text": "Know more about Manhattan in the edge of city to see beautful bridge",
+            "location": "New York City",
+            "price": "$ 260"
+      },
+      {
+            "postId": 1,
+            "id": 5,
+            "name": "Snow Forest",
+            "img": "https://cdn.wallpapersafari.com/86/58/oIywmT.jpg",
+            "text": "Making a snow house in the middle of the forest is fun and a good idea",
+            "location": "Hol, Norway",
+            "price": "$ 170"
+      },
+      {
+            "postId": 1,
+            "id": 5,
+            "name": "Newports Beach",
+            "img": "https://cdn.getyourguide.com/img/location/60c63d7a85d76.jpeg/88.jpg",
+            "text": "Relaxing mind while watching the sunsset, how beautifull life is",
+            "location": "California, US",
+            "price": "$ 310"
+      }
+]
