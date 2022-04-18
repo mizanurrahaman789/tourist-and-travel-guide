@@ -21,7 +21,7 @@ const Banner = () => {
                         />
                         <Carousel.Caption>
                               <h3 >Traveling Very Intersting</h3>
-                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              <p>Our travel guides aim to give you the best and most up-to-date information on the major travel destinations around the world.</p>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -32,8 +32,8 @@ const Banner = () => {
                         />
 
                         <Carousel.Caption>
-                              <h3>Second slide label</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              <h3>TRAVEL GUIDES</h3>
+                              <p>Our travel guides aim to give you the best and most up-to-date information on the major travel destinations around the world.</p>
                         </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -44,9 +44,9 @@ const Banner = () => {
                         />
 
                         <Carousel.Caption>
-                              <h3>Third slide label</h3>
+                              <h3>TRAVEL GUIDES</h3>
                               <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Our travel guides aim to give you the best and most up-to-date information on the major travel destinations around the world.
                               </p>
                         </Carousel.Caption>
                   </Carousel.Item>
